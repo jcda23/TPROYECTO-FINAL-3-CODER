@@ -1,0 +1,90 @@
+.banner {
+  padding-top: 0;
+  .banner-image {
+    @include hero-image("../img/carpas.jpg");
+    background-attachment: scroll;
+    min-height: 15vw;
+    width: 100%;
+    .banner-image-opacity {
+      min-height: 15vw;
+      width: 100%;
+      background-color: color("blk-alpha");
+
+      .banner-image-content {
+        @include flexible(flex, none, center, center);
+        width: 100%;
+        h2 {
+          color: color("wth-alpha");
+          line-height: 1.06;
+          font-size: 15vw;
+          font-weight: 800;
+          text-transform: uppercase;
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner {
+    .banner-image {
+      min-height: 15vw;
+      .banner-image-opacity {
+        min-height: 15vw;
+        .banner-image-content {
+          h2 {
+            font-size: 15vw;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .banner {
+    @include flexible(flex, none, center, center);
+    padding-top: 2rem;
+
+    .banner-image {
+      box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.5);
+      min-height: 15vw;
+      max-width: $max-width;
+
+      .banner-image-opacity {
+        min-height: 15vw;
+
+        .banner-image-content {
+          h2 {
+            font-size: 15vw;
+            max-width: $max-width;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .banner {
+    padding-top: 2rem;
+    @include flexible(flex, none, center, center);
+
+    .banner-image {
+      min-height: 15vh;
+      max-width: $max-width;
+
+      .banner-image-opacity {
+        min-height: 15vh;
+
+        .banner-image-content {
+          h2 {
+            font-size: 15vh;
+            max-width: $max-width;
+          }
+        }
+      }
+    }
+  }
+}

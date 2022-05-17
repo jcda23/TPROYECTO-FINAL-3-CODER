@@ -1,0 +1,117 @@
+.banner-about {
+  @extend .banner;
+
+  .banner-image-about {
+    box-shadow: none;
+    @extend .banner-image;
+    min-height: 10vw;
+    min-width: 80%;
+    margin: 0 auto;
+    .banner-image-opacity-about {
+      @extend .banner-image-opacity;
+      min-height: 10vw;
+      width: 100%;
+      .banner-image-content-about {
+        display: flex;
+        justify-content: space-between;
+        @extend .banner-image-content;
+        min-width: 100%;
+        .hero-image-title-about {
+          @extend .hero-image-title-about;
+          min-width: 100%;
+          font-size: 10vw;
+          text-align: center;
+          letter-spacing: 20px;
+        }
+      }
+    }
+  }
+}
+
+.about-main {
+  margin: 0 auto;
+
+  .article-about-1,
+  .article-about-2,
+  .article-about-3 {
+    width: 100%;
+    padding-top: 1rem;
+
+    .about-info {
+      margin: 0 auto;
+      padding: 1rem 1rem;
+      h3 {
+        @extend .title;
+        margin: 0 auto;
+      }
+
+      h2 {
+        @extend .section-title;
+        margin: 0 auto;
+        border-bottom: none;
+        text-align: left;
+        color: color("primary");
+      }
+      p {
+        @extend .text;
+      }
+    }
+    .about-image {
+      padding: 1rem;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      img {
+        display: inline-block;
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+        border-style: none;
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .banner-about {
+    padding-top: 0;
+
+    .banner-image-about {
+      box-shadow: none;
+      min-height: 10vw;
+
+      .banner-image-opacity-about {
+        min-height: 10vw;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .article-about-1,
+  .article-about-2,
+  .article-about-3 {
+    padding-top: 4rem;
+
+    .banner-image-about {
+      box-shadow: none;
+      min-height: 10vw;
+
+      .banner-image-opacity-about {
+        min-height: 10vw;
+      }
+    }
+  }
+
+  .about-main {
+    padding-top: 4rem;
+    .article-about-1,
+    .article-about-2,
+    .article-about-3 {
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      column-gap: 10px;
+    }
+  }
+}
