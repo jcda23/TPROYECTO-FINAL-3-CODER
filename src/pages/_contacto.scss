@@ -1,7 +1,9 @@
 .main-contact {
   @include hero-image("../img/paisaje-contact.jpg");
+  background-color: color("blk-alpha");
   min-height: 100vh;
-  height: 100vh;
+  width: 100%;
+  padding-bottom: 10rem;
 
   .contact {
     h2 {
@@ -14,7 +16,7 @@
       text-align: center;
       letter-spacing: 2px;
     }
-    background-color: color("blk-alpha");
+
     @extend .size-viewport;
     .section-title-card {
       @extend .title;
