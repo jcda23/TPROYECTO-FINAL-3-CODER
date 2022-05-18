@@ -7,6 +7,13 @@
     h2 {
       color: color("wth");
     }
+
+    .sub-title-contact {
+      padding-top: 1rem;
+      color: color("wth");
+      text-align: center;
+      letter-spacing: 2px;
+    }
     background-color: color("blk-alpha");
     @extend .size-viewport;
     .section-title-card {
@@ -14,6 +21,7 @@
       border: none;
       margin: 0 auto;
       padding-top: 5rem;
+      color: color("wth");
     }
 
     .contact-form {
@@ -21,6 +29,7 @@
       margin: 2rem auto;
       padding: 1rem;
       max-width: 800px;
+      z-index: 999;
 
       * {
         padding: 0.5rem;

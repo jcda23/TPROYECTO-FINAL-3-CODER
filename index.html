@@ -6,18 +6,19 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport"
-    content="Si eres amante del mundo del camping y el outdoor, esta es tu web. Te mostraremos todos los trucos, guias, utensilos, equipamiento y recetas para que tu aventura, outdoor o camping sea la protagonista de un día perfecto"
-    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1-0, minimum-scale=1.0">
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1-0, minimum-scale=1.0 i eres amante del mundo del camping y el outdoor, esta es tu web. Te mostraremos todos los trucos, guias, utensilos, equipamiento y recetas para que tu aventura, outdoor o camping sea la protagonista de un día perfecto">
+  <meta name="viewport" content="hacemos accesible las actividades de camping y outdoor al mayor numero de personas.">
   <meta name="keywords"
     content="camping deporte outdoor gas pipeta bombona estufa termo carpa campo aventura acampar paseo diversion amigos">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
+  <!-- Header -->
   <header class="header">
     <section class="container content-header">
       <div class="logo-container">
@@ -40,17 +41,21 @@
       </button>
     </section>
   </header>
+
+  <!-- Barra de navegacion -->
   <section class="navbar">
     <section class="container">
       <nav class="menu">
         <a class="active" href="index.html">Inicio</a>
-        <a href="./assets/pages/guia.html" target="_blank" rel="noopener">Guia</a>
-        <a href="./assets/pages/nosotros.html" target="_blank" rel="noopener">Nosotros</a>
-        <a href="./assets/pages/portafolio.html" target="_blank" rel="noopener">Portafolio</a>
-        <a href="./assets/pages/contacto.html" target="_blank" rel="noopener">Contacto</a>
+        <a href="./assets/pages/guia.html">Guia</a>
+        <a href="./assets/pages/nosotros.html">Nosotros</a>
+        <a href="./assets/pages/portafolio.html">Portafolio</a>
+        <a href="./assets/pages/contacto.html">Contacto</a>
       </nav>
     </section>
   </section>
+
+  <!-- Hero image-->
   <section class="home">
     <article class="hero-image">
       <aside class="hero-image-opacity">
@@ -58,7 +63,7 @@
           <h2 class="hero-image-title">
             Bienvenidos<br> Aventurer@s
           </h2>
-          <a href="./assets/pages/contacto.html" target="_blank" rel="noopener">
+          <a href="./assets/pages/contacto.html">
             <span></span>
             <span></span>
             <span></span>
@@ -69,6 +74,8 @@
       </aside>
     </article>
   </section>
+
+  <!-- Contenido principal -->
   <article class="article-container container">
     <div class="article-title">
       <h1>Para Fanáticos del Camping y el Outdoor</h1>
@@ -85,17 +92,17 @@
           sea la protagonista de un día perfecto.</strong></p>
     </div>
   </article>
-  <section class="banner container">
-    <article class="banner-image">
-      <aside class="banner-image-opacity">
-        <div class="banner-image-content">
-          <h2 class="hero-image-title">
-            Merximport
-          </h2>
-        </div>
-      </aside>
-    </article>
+
+  <!--Banner principal -->
+  <section class="banner">
+    <div class="banner-container">
+      <picture class="banner-image">
+        <img src="./assets/img/banner.jpg" alt="">
+      </picture>
+    </div>
   </section>
+
+  <!--Slider de productos-->
   <section class="products">
     <div class=" swiper mySwipe container">
       <div class="title-carousel">
@@ -187,6 +194,8 @@
       <div class="swiper-button-prev"></div>
     </div>
   </section>
+
+  <!--Ventana nodal de slider de productos -->
   <article class="modal" id="producto-1">
     <div class="modal-content">
       <a href="#cerrar" class="modal-close"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -373,6 +382,8 @@
       </article>
     </div>
   </article>
+
+  <!--Secion de guias de productos -->
   <main class="main-guid">
     <section class="title-guid-head container">
       <h2>Recomendaciones y Guias para tus Aventuras de Camping y Outdoor 2022:</h2>
@@ -383,7 +394,7 @@
           <picture class="picture-guid">
             <img src="./assets/img/guia-combustible.jpg" alt="">
           </picture>
-          <a href="./assets/pages/guia.html" target="_blank" rel="noopener"></a>
+          <a href="./assets/pages/guia.html"></a>
         </div>
         <div class="title-guid">
           <h2>ELIGE EL COMBUSTIBLE ADECUADO</h2>
@@ -394,7 +405,7 @@
           <picture class="picture-guid">
             <img src="./assets/img/gas-guia.jpg" alt="">
           </picture>
-          <a href="./assets/pages/guia.html" target="_blank" rel="noopener"></a>
+          <a href="./assets/pages/guia.html"></a>
         </div>
         <div class="title-guid">
           <h2>TODO SOBRE EL GAS</h2>
@@ -402,6 +413,8 @@
       </div>
     </section>
   </main>
+
+  <!--seccion newsletter -->
   <section class="section-newsletter">
     <div class="newsletter container">
       <fomr class="form-new">
@@ -420,6 +433,8 @@
       </fomr>
     </div>
   </section>
+
+  <!--Footer principal -->
   <footer class="footer">
     <section class="container foot">
       <div class="footer-logo">
@@ -437,7 +452,7 @@
               class="fa-brands fa-instagram-square"></i>@merximport</a>
         </div>
         <nav class="footer-nav">
-          <a href="./assets/pages/contacto.html" target="_blank" rel="noopener">Contacto</a>
+          <a href="./assets/pages/contacto.html">Contacto</a>
           <a href="#">Pagos</a>
           <a href="#">Preguntas</a>
         </nav>
@@ -447,6 +462,8 @@
       </div>
     </section>
   </footer>
+
+  <!--Footer secundario -->
   <footer class="footer-end">
     <div class="footer-end-container container">
       <div class="slogan">
@@ -460,9 +477,10 @@
       </div>
     </div>
   </footer>
+
   <script src="https://kit.fontawesome.com/35ecaaf3bf.js" crossorigin="anonymous"></script>
   <script src="./assets/js/main.js" type="module"></script>
-  <script src="https://kit.fontawesome.com/35ecaaf3bf.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </body>
 
-</html
+</htmls

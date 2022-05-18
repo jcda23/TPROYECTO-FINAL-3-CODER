@@ -9,12 +9,10 @@
 
 .section-title {
   border-bottom: 2px solid map-get($map: $palette, $key: "primary");
-  padding: 0.5rem 1rem;
   width: 100%;
   text-align: center;
   font-size: 900;
-  letter-spacing: 5px;
-  color: map-get($map: $palette, $key: "title");
+  color: map-get($map: $palette, $key: "sub-title");
   text-transform: uppercase;
 }
 
@@ -24,7 +22,7 @@
   width: 100%;
   border-bottom: 2px solid map-get($map: $palette, $key: "primary");
   text-align: center;
-  color: map-get($map: $palette, $key: "tittle");
+  color: map-get($map: $palette, $key: "sub-title");
   letter-spacing: 5px;
   font-size: 900;
   text-transform: uppercase;

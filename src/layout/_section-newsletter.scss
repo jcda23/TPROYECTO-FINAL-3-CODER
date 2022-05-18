@@ -15,20 +15,22 @@
     height: 100%;
     background-color: color("blk-alpha");
     h2 {
-      font-weight: 900;
+      font-weight: 500;
       letter-spacing: 0.06em;
       text-transform: uppercase;
+      font-size: 1.2rem;
     }
 
     .newsletter-text {
       @extend .text;
       display: block;
       text-align: center;
-      max-width: 600px;
+      max-width: 400px;
       margin-top: 10px auto;
-      font-weight: 300;
+      font-weight: 15000;
       font-style: italic;
       padding: 0 1rem;
+      font-size: 0.8rem;
     }
 
     .newsletter-small {
@@ -72,8 +74,27 @@
 
     .email-box:hover > .tbox,
     .tbox:focus {
-      width: 16.25rem;
+      width: 12rem;
       padding: 0 10px;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .newsletter {
+    .form-new {
+      h2 {
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+        font-size: 2rem;
+      }
+      .newsletter-text {
+        font-size: 1.2rem;
+      }
+      .newsletter-small {
+        padding: 0;
+      }
     }
   }
 }
@@ -81,8 +102,17 @@
 @media screen and (min-width: 1024px) {
   .newsletter {
     .form-new {
+      h2 {
+        font-weight: 900;
+        letter-spacing: 0.06em;
+        text-transform: uppercase;
+      }
       .newsletter-text {
         padding: 0;
+        max-width: 600px;
+        margin-top: 10px auto;
+        font-weight: 300;
+        font-style: italic;
       }
       .newsletter-small {
         padding: 0;

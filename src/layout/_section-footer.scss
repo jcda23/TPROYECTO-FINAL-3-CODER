@@ -1,13 +1,13 @@
 .footer {
   height: 400px;
   width: 100%;
-  padding: 4rem 0;
+
   .foot {
     height: 100%;
     width: 100%;
     @include flexible(flex, column, space-evenly, center);
     width: 100%;
-    padding-top: 4rem;
+    padding-top: 2rem;
 
     .footer-logo {
       a {
@@ -45,9 +45,13 @@
 
           i {
             padding-right: 5px;
-            color: color("second");
+            color: color("primary");
             font-size: 2rem;
           }
+        }
+        a :hover {
+          color: color("primary-alpha");
+          font-size: 2.2rem;
         }
       }
 
@@ -64,10 +68,15 @@
           letter-spacing: 2px;
           text-transform: uppercase;
         }
+
+        a:hover {
+          color: color("primary");
+          font-size: 1.1rem;
+        }
       }
     }
     .copy {
-      color: color("sub-title");
+      color: color("blk");
       line-height: 50px;
     }
   }
@@ -75,10 +84,10 @@
 
 .footer-end {
   background-color: color("primary-alpha");
-  min-height: 350px;
-  padding-top: 75px;
+  min-height: 250px;
+
   .footer-end-container {
-    padding: 4rem 0;
+    padding: 0 1rem;
     margin: 0 auto;
     @include flexible(flex, column, center, center);
 
@@ -86,10 +95,14 @@
       p {
         @extend .section-title;
         border-bottom: none;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
+        height: 100;
+        color: color("wth");
       }
     }
     .footer-logo-end {
+      display: none;
+
       a {
         display: flex;
         align-items: center;
@@ -108,8 +121,42 @@
   }
 }
 
+@media (min-width: 768px) {
+  .footer-end {
+    .footer-end-container {
+      padding: 2rem 1rem;
+    }
+  }
+}
+
 @media (min-width: 1024px) {
   .footer {
     padding-bottom: 0;
+    padding-top: 4rem;
+
+    .foot {
+      padding-top: 4rem;
+    }
+  }
+
+  .footer-end {
+    min-height: 350px;
+    padding-top: 75px;
+    .footer-end-container {
+      max-width: 900px;
+      width: 100%;
+      padding: 2rem 4rem;
+
+      .slogan {
+        p {
+          font-size: 1.5rem;
+          color: color("wth");
+        }
+      }
+
+      .footer-logo-end {
+        display: initial;
+      }
+    }
   }
 }
