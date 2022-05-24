@@ -4,7 +4,7 @@
   position: fixed;
   margin: 0;
   left: 0;
-  bottom: $header-height;
+  top: $header-height;
   z-index: 999;
   pointer-events: none;
   opacity: 0;
@@ -58,9 +58,7 @@
           color: color("wth");
           line-height: 50px;
         }
-        a.active {
-          background-color: color("primary");
-        }
+
         a:last-child {
           padding-right: 0;
         }

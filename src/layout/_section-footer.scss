@@ -1,83 +1,59 @@
 .footer {
-  height: 400px;
+  display: flex;
+  min-height: 100px;
   width: 100%;
 
   .foot {
-    height: 100%;
+    height: auto;
     width: 100%;
-    @include flexible(flex, column, space-evenly, center);
-    width: 100%;
-    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    .footer-logo {
-      a {
-        display: flex;
-        align-items: center;
-        color: color("sub-title");
-        letter-spacing: 2px;
-        font-size: 1.2rem;
-        font-weight: bold;
-        text-transform: uppercase;
-        img {
-          width: 3rem;
-          height: 3rem;
-          padding-right: 5px;
-        }
-      }
-    }
-    .footer-media {
+    .social-media {
       width: 100%;
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-direction: column;
 
-      .social-media {
-        display: flex;
-        flex-direction: column;
-        line-height: 2rem;
-
-        a {
-          display: flex;
-          align-items: center;
-          padding: 0 20px;
-          color: color("sub-title");
-          line-height: 50px;
-          letter-spacing: 2px;
-
-          i {
-            padding-right: 5px;
+      a {
+        color: color("second");
+        line-height: 50px;
+        font-size: 1rem;
+        i {
+          span {
             color: color("primary");
-            font-size: 2rem;
+            font-weight: bold;
           }
         }
-        a :hover {
-          color: color("primary-alpha");
-          font-size: 2.2rem;
-        }
       }
-
-      .footer-nav {
-        display: flex;
-        flex-direction: column;
-        line-height: 2rem;
-
-        a {
-          display: block;
-          padding: 0 20px;
-          color: color("sub-title");
-          line-height: 50px;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-        }
-
-        a:hover {
-          color: color("primary");
-          font-size: 1.1rem;
-        }
+      a :hover {
+        color: color("second");
+        transition: all 0.5s ease-out;
+        text-decoration: none;
       }
     }
-    .copy {
-      color: color("blk");
-      line-height: 50px;
+
+    .footer-nav {
+      flex-direction: column;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      text-transform: uppercase;
+
+      a {
+        display: block;
+        color: color("primary");
+        line-height: 50px;
+        font-weight: bold;
+        font-size: 0.8rem;
+      }
+
+      a:hover {
+        color: color("second");
+      }
     }
   }
 }
@@ -85,6 +61,10 @@
 .footer-end {
   background-color: color("primary-alpha");
   min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 0 1rem 0;
 
   .footer-end-container {
     padding: 0 1rem;
@@ -101,8 +81,6 @@
       }
     }
     .footer-logo-end {
-      display: none;
-
       a {
         display: flex;
         align-items: center;
@@ -118,44 +96,74 @@
         }
       }
     }
+    .copy {
+      color: color("sun-title");
+      border-top: thin solid color("wth");
+    }
   }
 }
 
 @media (min-width: 768px) {
+  .footer {
+    .foot {
+      flex-direction: column;
+      .social-media {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        a {
+          font-size: 2rem;
+        }
+      }
+      .footer-nav {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        a {
+          font-size: 1.2em;
+        }
+
+        a:hover {
+          color: color("second");
+        }
+      }
+    }
+  }
+
   .footer-end {
     .footer-end-container {
       padding: 2rem 1rem;
     }
   }
-}
 
-@media (min-width: 1024px) {
-  .footer {
-    padding-bottom: 0;
-    padding-top: 4rem;
-
-    .foot {
+  @media (min-width: 1024px) {
+    .footer {
+      padding-bottom: 0;
       padding-top: 4rem;
-    }
-  }
 
-  .footer-end {
-    min-height: 350px;
-    padding-top: 75px;
-    .footer-end-container {
-      max-width: 900px;
-      width: 100%;
-      padding: 2rem 4rem;
-
-      .slogan {
-        p {
-          font-size: 1.5rem;
-          color: color("wth");
-        }
+      .foot {
+        padding-top: 4rem;
       }
+    }
 
-      .footer-logo-end {
-        display: initial;
+    .footer-end {
+      min-height: 350px;
+      padding-top: 75px;
+      .footer-end-container {
+        max-width: 900px;
+        width: 100%;
+        padding: 2rem 4rem;
+
+        .slogan {
+          p {
+            font-size: 1.5rem;
+            color: color("wth");
+          }
+        }
+
+        .footer-logo-end {
+          display: initial;
+        }
       }
     }
   }
