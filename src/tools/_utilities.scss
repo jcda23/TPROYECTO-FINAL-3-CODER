@@ -7,6 +7,9 @@
   display: none;
 }
 
+.section {
+  padding: 2rem 1rem;
+}
 .section-title {
   border-bottom: 2px solid map-get($map: $palette, $key: "primary");
   width: 100%;

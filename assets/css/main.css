@@ -5,6 +5,9 @@
 .none {
   display: none; }
 
+.section {
+  padding: 2rem 1rem; }
+
 .section-title, .article-container .article-title, .footer-end .footer-end-container .slogan p, .section-about .content-article .article-about .about-info-1 h2,
 .section-about .content-article .article-about .about-info-2 h2, .guid-pages .guid-pages-container .guid-page .title-guid-pages, .banner .guid-pages-container .guid-page .title-guid-pages {
   border-bottom: 2px solid #38b000;
@@ -14,7 +17,7 @@
   color: #333333;
   text-transform: uppercase; }
 
-.title, .products .swiper .title-carousel, .main-contact .contact .section-title-card, .main-about .content-main .article-about-main .about-info-main h3, .guid-pages .article-gas .title-gas-guid, .banner .article-gas .title-gas-guid {
+.title, .main-contact .contact .section-title-card, .main-about .content-main .article-about-main .about-info-main h3, .guid-pages .article-gas .title-gas-guid, .banner .article-gas .title-gas-guid {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -610,6 +613,65 @@ p {
         color: white; }
       .footer-end .footer-end-container .footer-logo-end {
         display: initial; } }
+.slogan-container {
+  color: white;
+  background-color: #2e7a39;
+  margin-bottom: 1rem; }
+  .slogan-container .slogan {
+    text-align: center; }
+    .slogan-container .slogan .company-slogan {
+      margin: 0 auto; }
+      .slogan-container .slogan .company-slogan .slogan-logo {
+        margin: 0 auto; }
+        .slogan-container .slogan .company-slogan .slogan-logo a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: white;
+          letter-spacing: 2px;
+          font-weight: bold;
+          text-transform: uppercase; }
+          .slogan-container .slogan .company-slogan .slogan-logo a img {
+            width: 2rem;
+            height: 2rem;
+            padding-right: 8px; }
+        .slogan-container .slogan .company-slogan .slogan-logo p {
+          text-transform: uppercase;
+          padding: 1rem 0; }
+
+.footer-container {
+  margin-bottom: 1rem; }
+  .footer-container .footer {
+    padding: 0; }
+    .footer-container .footer .footer-contact {
+      text-align: center; }
+      .footer-container .footer .footer-contact .footer-company h4 {
+        text-transform: uppercase;
+        padding: 1rem 0;
+        font-size: 1rem;
+        letter-spacing: 2px; }
+      .footer-container .footer .footer-contact .footer-company .text-company {
+        margin-right: 1rem; }
+    .footer-container .footer .footer-section {
+      display: flex;
+      justify-content: space-between;
+      padding: 1.5rem;
+      color: white;
+      background-color: #2e7a39; }
+      .footer-container .footer .footer-section .footer-title {
+        margin-right: 1.5rem; }
+      .footer-container .footer .footer-section .footer-social .media {
+        color: white;
+        margin-right: 1.5rem; }
+    .footer-container .footer .footer-copy-right {
+      padding: 1rem;
+      text-align: center;
+      background-color: #2e7a39;
+      max-height: 60px;
+      height: 100%; }
+      .footer-container .footer .footer-copy-right small {
+        color: white; }
+
 .menu-btn {
   outline: thin solid #38b000;
   border: 0;
@@ -793,56 +855,6 @@ p {
     transform: rotate(0deg); }
   100% {
     transform: rotate(360deg); } }
-.products {
-  margin-top: 0;
-  height: 100%; }
-  .products .swiper {
-    position: relative;
-    padding-bottom: 0; }
-    .products .swiper .title-carousel {
-      margin: 1rem auto; }
-    .products .swiper .swiper-container {
-      height: 100%;
-      width: 100%; }
-    .products .swiper .swiper-button-next {
-      right: 0.5vw; }
-    .products .swiper .swiper-button-prev {
-      left: 0.5vw; }
-    .products .swiper .swiper-button-prev,
-    .products .swiper .swiper-button-next {
-      position: absolute;
-      display: block;
-      top: 58%;
-      cursor: pointer;
-      background: none;
-      color: #181717;
-      opacity: 10%; }
-
-@media screen and (min-width: 768px) {
-  .products {
-    margin-top: 0; }
-    .products .swiper {
-      padding-bottom: 0; } }
-@media screen and (min-width: 1024px) {
-  .products {
-    margin-top: 2rem; }
-    .products .swiper {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      min-height: 40vh;
-      max-width: 1200px;
-      padding: 0 1rem 4rem 1rem; }
-      .products .swiper .title-carousel {
-        margin-bottom: 4rem;
-        margin-top: 2rem; } }
-@media screen and (min-width: 1200px) {
-  .swiper-button-next {
-    right: 0; }
-
-  .swiper-button-prev {
-    left: 0; } }
 .product-card {
   box-shadow: 0.25rem 0.25rem 1rem rgba(0, 0, 0, 0.25);
   position: relative;
