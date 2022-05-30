@@ -1,0 +1,16 @@
+.article-container {
+  margin-top: 2rem;
+  .article-title {
+    @extend .section-title;
+  }
+  .article-text {
+    @extend .text;
+  }
+}
+
+@media (min-width: 1024px) {
+  .article-container {
+    .article-text {
+    }
+  }
+}

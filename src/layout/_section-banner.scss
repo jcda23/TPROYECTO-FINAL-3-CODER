@@ -1,0 +1,10 @@
+.banner {
+  @extend .guid-pages;
+  .banner-container {
+    margin: 0 auto;
+    max-width: $max-width;
+    .banner-image {
+      @extend .picture-guid-page;
+    }
+  }
+}
