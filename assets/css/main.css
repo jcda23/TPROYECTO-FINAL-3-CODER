@@ -360,7 +360,6 @@ p {
           left: 0;
           right: 0;
           bottom: 0;
-          z-index: 1;
           cursor: pointer; }
       .main-guid .guid-container .guid .title-guid {
         position: absolute;
@@ -374,8 +373,7 @@ p {
         width: auto;
         padding: 1rem 1rem;
         text-align: left;
-        color: white;
-        z-index: 999; }
+        color: white; }
     .main-guid .guid-container .slogan-container {
       color: white;
       background-color: #2e7a39;
