@@ -1,5 +1,6 @@
 .main-guid {
-  padding: 0rem 1rem;
+  padding-top: 4rem;
+  padding-bottom: 0;
   display: block;
   .title-guid-head {
     border-bottom: none;
@@ -59,6 +60,55 @@
         padding: 1rem 1rem;
         text-align: left;
         color: color("wth");
+        z-index: 999;
+      }
+    }
+
+    .slogan-container {
+      color: color("wth");
+      background-color: color("primary-alpha");
+      padding: 2rem 1rem 0 1rem;
+      .slogan {
+        text-align: center;
+        .company-slogan {
+          margin: 0 auto;
+          .slogan-logo {
+            margin: 0 auto;
+            a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              color: color("wth");
+              letter-spacing: 2px;
+              font-weight: bold;
+              text-transform: uppercase;
+              img {
+                width: 2rem;
+                height: 2rem;
+                padding-right: 8px;
+              }
+            }
+            p {
+              text-transform: uppercase;
+              padding: 1rem 0;
+            }
+          }
+        }
+        .footer-copy-right {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          height: 20px;
+          text-align: center;
+          background-color: color("primary-alpha");
+          border-top: thin solid color("primary");
+
+          small {
+            color: color("wth");
+            width: 100%;
+          }
+        }
       }
     }
   }

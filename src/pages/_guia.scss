@@ -47,13 +47,14 @@
           position: relative;
           display: block;
           overflow: hidden;
+          pointer-events: none;
           img {
             display: inline-block;
             width: 100%;
             height: auto;
             object-fit: cover;
             border-style: none;
-            vertical-align: middle;
+            pointer-events: none;
           }
         }
         a {
@@ -110,7 +111,7 @@
     }
     .guid-pages-container {
       margin: 0 auto;
-      padding: 4rem 0;
+      padding: 2rem 0 1rem 0;
     }
 
     .article-gas {
